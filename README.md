@@ -10,6 +10,3 @@ Place "Resources" folder in your Mediary repository and you are good to go.
 
 Mediary preview (less than 2 min):
 
-
-![Mediary_SparkVideo](https://user-images.githubusercontent.com/48128569/141797119-653cab7a-84e8-4d74-b97c-e5a19b57b80e.gif)
-
