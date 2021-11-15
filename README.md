@@ -10,3 +10,4 @@ Place "Resources" folder in your Mediary repository and you are good to go.
 
 Mediary preview (less than 2 min):
 
+![Mediary](https://user-images.githubusercontent.com/48128569/141798940-cd88d773-e362-41b2-aae5-7095d464fe53.gif)
