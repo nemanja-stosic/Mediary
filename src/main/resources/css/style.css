@@ -1,0 +1,230 @@
+
+* {
+	-fx-primary: #212121;
+	-fx-secondary: #FFFF8D;
+	-fx-primarytext: #B2B2B2;
+	-fx-red: #FF0000;
+	-fx-blue: #1976D2;
+}
+
+.root {
+	-fx-base: -fx-primary; /*everything in stage buttons menu bar everything... */
+    -fx-accent: #e7eff7 ; /*selected areas like menu bar items */
+    -fx-default-button: #7f878f ;
+    -fx-focus-color: #efefef;
+    -fx-faint-focus-color: #efefef22;
+    -fx-focused-text-base-color : ladder(
+            -fx-selection-bar,
+            -fx-light-text-color 45%,
+            -fx-dark-text-color 46%,
+            -fx-dark-text-color 59%,
+            -fx-mid-text-color 60%
+        );
+    -fx-focused-mark-color : -fx-focused-text-base-color ;
+
+    -fx-font: Arial;
+	-fx-font-size: 17px;
+}
+
+.text-input:focused {
+    -fx-highlight-text-fill: ladder(
+        -fx-highlight-fill,
+        -fx-light-text-color 45%,
+        -fx-dark-text-color  46%,
+        -fx-dark-text-color  59%,
+        -fx-mid-text-color   60%
+    );
+}
+
+.jfx-label-color-black {
+	-fx-text-fill: -fx-primarytext;
+}
+
+.dialog-button {
+	-fx-background-color: -fx-primary;
+	-fx-border-color: #2A2E37;
+	-fx-text-fill: white;
+}
+
+.dialog-button:hover {
+	-fx-background-color: black;
+	-fx-border-color: -fx-blue;
+	-fx-text-fill: white;
+}
+
+.jfx-dialog-layout {
+	-fx-background-color: -fx-primary;
+}
+
+#rootBorderPane {
+	-fx-background-image: url("file:Resources/Mediary.data.images/MainStageImage.jpg");
+	-fx-background-size: 100% 100%;
+}
+
+#roundButtons {
+	-fx-background-radius: 5em;
+    -fx-min-width: 110px;
+    -fx-min-height: 110px;
+    -fx-max-width: 110px;
+    -fx-max-height: 110px;
+    -fx-background-color: -fx-red;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+}
+
+#vibrationButton {
+	-fx-background-radius: 5em;
+    -fx-min-width: 400px;
+    -fx-min-height: 320px;
+    -fx-max-width: 400;
+    -fx-max-height: 320px;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+}
+
+.jfx-hamburger {
+	-fx-spacing: 4;
+	-fx-background-color: #1976D2;
+	-fx-background-radius: 5px;
+}
+
+#toolbarButtons {
+	-fx-font: Arial;
+    -fx-font-size: 15px;
+    -fx-text-fill: white;
+
+    -fx-background-color: derive(-fx-primary, 20%);
+}
+
+#toolbarButtons:hover {
+	-fx-background-color: -fx-blue;
+	-fx-text-fill: -fx-primary;
+}
+
+.menu-bar {
+	-fx-font: Arial;
+	-fx-font-size: 13px;
+}
+
+.menu-item {
+	-fx-font: Arial;
+	-fx-font-size: 13px;
+}
+
+.jfx-tree-view {
+	-fx-font: Arial;
+	-fx-font-size: 13px;
+}
+
+#fullname {
+	-fx-text-fill: #0900ff;
+}
+
+/* Meditation Stage style coding... */
+
+#rootMeditationPane {
+	-fx-background-image: url("file:Resources/Mediary.data.images/MeditationStageImage.png");
+	-fx-background-size: 100% 100%;
+}
+
+#crownButton {
+	-fx-min-width: 130px;
+    -fx-min-height: 60px;
+    -fx-max-width: 130;
+    -fx-max-height: 60px;
+    -fx-background-color: -fx-red;
+    -fx-background-insets: 0.0px;
+    -fx-opacity: 0;
+     -fx-padding: 0px;
+}
+
+#meditationRoundButton {
+	-fx-background-radius: 5em;
+    -fx-min-width: 80px;
+    -fx-min-height: 80px;
+    -fx-max-width: 80;
+    -fx-max-height: 80px;
+    -fx-background-color: -fx-red;
+    -fx-background-insets: 0px;
+    -fx-opacity: 0;
+    -fx-padding: 0px;
+}
+
+#rootPaneIntro {
+	-fx-background-image: url("file:Resources/Mediary.data.images/MeditationIntroImage.jpg");
+	-fx-background-size: 100% 100%;
+}
+
+#nextButtonIntro {
+	-fx-border-color: #FFFFFF;
+	-fx-background-color: -fx-secondary;
+	-fx-text-fill: -fx-primary;
+}
+
+/* The crown part2 scroll pane */
+
+.scroll-pane {
+    -fx-background-color: black;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #546E7A;
+    -fx-background-radius: 5em;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: black;
+}
+
+#spiritualMusicStackPane {
+	-fx-background-color: #01579B;
+}
+
+/* Diary */
+
+#titleLabel {
+	-fx-text-fill: #d50000;
+	-fx-font-size: 23px;
+	-fx-font-weight: bold;
+    -fx-font-style: italic;
+}
+
+.text-area {
+	-fx-text-fill: #8C9EFF;
+    -fx-background-color: transparent;
+    -fx-font-size: 20px;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .viewport{
+    -fx-background-color: transparent;
+}
+
+
+.text-area .scroll-pane .content{
+    -fx-background-color: transparent;
+}
+
+.focus-mode > .text-area{
+	-fx-background-color: #CFD8DC;
+}

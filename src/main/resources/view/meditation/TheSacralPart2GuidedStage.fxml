@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.meditation.TheSacralPart2GuidedController">
+   <children>
+      <ScrollPane fx:id="scrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="630.0" prefWidth="916.0">
+         <content>
+            <AnchorPane fx:id="anchorPane" prefHeight="630.0" prefWidth="916.0">
+               <children>
+                  <AnchorPane prefHeight="1000.0" prefWidth="450.0">
+                     <children>
+                        <Label prefHeight="34.0" prefWidth="285.0" text="Guided Chakra Meditations">
+                           <font>
+                              <Font name="Arial Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <VBox fx:id="vboxOne" layoutY="30.0" prefHeight="200.0" prefWidth="450.0">
+                           <children>
+                              <ImageView fx:id="meditation" fitHeight="200.0" fitWidth="450.0" onMouseClicked="#handleSacralChakraGuided" pickOnBounds="true" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vboxTwo" layoutY="230.0" prefHeight="200.0" prefWidth="450.0">
+                           <children>
+                              <ImageView fx:id="meditation1" fitHeight="200.0" fitWidth="450.0" onMouseClicked="#handleSacralChakraGuided1" pickOnBounds="true" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vboxThree" layoutY="430.0" prefHeight="200.0" prefWidth="450.0">
+                           <children>
+                              <ImageView fx:id="meditation2" fitHeight="200.0" fitWidth="450.0" onMouseClicked="#handleSacralChakraGuided2" pickOnBounds="true" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="vboxFour" layoutY="630.0" prefHeight="200.0" prefWidth="450.0">
+                           <children>
+                              <ImageView fx:id="meditation3" fitHeight="200.0" fitWidth="450.0" onMouseClicked="#handleSacralChakraGuided3" pickOnBounds="true" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <VBox layoutX="450.0" layoutY="-1.0" prefHeight="779.0" prefWidth="443.0">
+                     <children>
+                        <TextFlow fx:id="textFlow" prefHeight="772.0" prefWidth="213.0" textAlignment="JUSTIFY" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</StackPane>

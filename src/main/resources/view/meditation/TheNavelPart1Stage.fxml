@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="916.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.meditation.TheNavelPart1Controller">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="630.0" prefWidth="916.0">
+         <children>
+            <VBox prefHeight="630.0" prefWidth="458.0">
+               <children>
+                  <ImageView fx:id="navelMeditationImageView" fitHeight="630.0" fitWidth="458.0" onMouseClicked="#handleNavelMeditation" pickOnBounds="true" />
+               </children>
+            </VBox>
+            <VBox layoutX="450.0" prefHeight="630.0" prefWidth="458.0">
+               <children>
+                  <ImageView fx:id="guidedNavelMeditationImageView" fitHeight="630.0" fitWidth="458.0" onMouseClicked="#handleGuidedNavelMeditation" pickOnBounds="true" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

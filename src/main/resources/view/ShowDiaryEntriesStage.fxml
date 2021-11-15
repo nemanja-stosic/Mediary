@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="774.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.ShowDiaryEntriesController">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="405.0" prefWidth="774.0">
+              <columns>
+                <TableColumn fx:id="titleColumn" editable="false" prefWidth="366.0" text="Title" />
+                <TableColumn fx:id="createdOnColumn" editable="false" prefWidth="407.0" text="Created on (dd/mm/yyyy)" />
+              </columns>
+            </TableView>
+            <JFXButton layoutY="404.0" onAction="#handleViewEntry" prefHeight="58.0" prefWidth="387.0" text="View entry" />
+            <JFXButton layoutX="383.0" layoutY="404.0" onAction="#handleDeleteEntry" prefHeight="58.0" prefWidth="387.0" text="Delete entry" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

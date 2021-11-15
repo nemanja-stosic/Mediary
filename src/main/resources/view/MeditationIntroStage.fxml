@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+
+<StackPane fx:id="rootPaneIntro" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="787.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.MeditationIntroController">
+   <children>
+      <AnchorPane fx:id="anchorPaneMeditation" prefHeight="787.0" prefWidth="1366.0">
+         <children>
+            <VBox prefHeight="719.0" prefWidth="1366.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TextFlow fx:id="textFlow" prefHeight="767.0" prefWidth="1366.0" textAlignment="JUSTIFY" />
+               </children>
+            </VBox>
+            <HBox layoutY="717.0" prefHeight="68.0" prefWidth="1366.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <JFXButton fx:id="meditateNowButton" onAction="#handleMeditateNow" prefHeight="117.0" prefWidth="718.0" text="Meditate Now" />
+                  <JFXButton fx:id="nextButtonIntro" onAction="#handleNextButton" prefHeight="117.0" prefWidth="718.0" text="Next" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

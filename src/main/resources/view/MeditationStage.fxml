@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="rootMeditationPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="787.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controller.MeditationController">
+   <children>
+      <AnchorPane fx:id="anchorPaneMeditation" prefHeight="787.0" prefWidth="1366.0">
+         <children>
+            <MenuBar prefHeight="32.0" prefWidth="1366.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleExitMenuItem" text="Exit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="More">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Morning Meditations">
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleMorningMeditationAnaMenuItem" text="5 minutes morning meditation - Ana Bucevic (Croatian)" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleMorningMeditationAbrahamMenuItem" text="Abraham Hicks Good Morning Rampage with music" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Before Sleep Meditations">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleBeforeSleepMeditationAnaMenuItem" text="5 minutes before sleep meditation - Ana Bucevic (Croatian)" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Affirmations">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleAffirmationsAbrahamMenuItem" text="Everything is always working out for me - Abraham - Esther Hicks" />
+                           </items>
+                        </Menu>
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <JFXButton fx:id="crownButton" layoutX="644.0" layoutY="85.0" onAction="#handleCrownButton" />
+            <JFXButton fx:id="meditationRoundButton" layoutX="669.0" layoutY="467.0" onAction="#handleSacralButton" />
+            <JFXButton fx:id="meditationRoundButton" layoutX="669.0" layoutY="537.0" onAction="#handleRootButton" text="Button" />
+            <JFXButton fx:id="meditationRoundButton" layoutX="669.0" layoutY="328.0" onAction="#handleHeartButton" />
+            <JFXButton fx:id="meditationRoundButton" layoutX="669.0" layoutY="401.0" onAction="#handleNavelButton" />
+            <JFXButton fx:id="meditationRoundButton" layoutX="669.0" layoutY="251.0" onAction="#handleThroatButton" />
+            <JFXButton fx:id="meditationRoundButton" layoutX="669.0" layoutY="153.0" onAction="#handleBrowButton" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
