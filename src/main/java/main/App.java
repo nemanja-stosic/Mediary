@@ -14,9 +14,6 @@ import java.util.Objects;
 
 public class App extends Application {
 
-    /*
-        and continue with diary, last change was splash screen FXML
-     */
 
     public static double monitorWidth = 0;
     public static double monitorHeight = 0;
